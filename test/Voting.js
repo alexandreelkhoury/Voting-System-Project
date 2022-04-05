@@ -202,7 +202,7 @@ contract("Voting", function (accounts) {
     });
      //Step 6: Votes Tallied.
      
-    describe.only("6 --- Votes Tallied ---", function () {
+    describe("6 --- Votes Tallied ---", function () {
         before(async function () {
             VotingInstance = await Voting.new({ from: owner });
             await VotingInstance.addVoter(voter1, { from: owner });
